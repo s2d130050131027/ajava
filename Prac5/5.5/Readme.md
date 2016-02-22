@@ -1,29 +1,5 @@
 Java Server Pages (JSP)
 =======================
-5.1 JSP date example
---------------------
-Create a simple dynamic JSP page that prints the current date and time.
-
-5.2 Reading Request Information
--------------------------------
-When an HTTP client such as web browser sends a request to a web server, along with the request it also sends some HTTP variables like Remote address, Remote host, Content type etc. In some cases these variables are useful to the programmers.
-use: request.getMethod(), request.getRequestURI(), request.getProtocol(), request.getPathInfo(), request.getPathTranslated(), request.getQueryString(), request.getContentLength(), request.getContentType(), request.getServerName(), request.getServerPort(), request.getRemoteUser(), request.getRemoteAddr(), request.getRemoteHost(), request.getAuthType()
-
-5.3 Retrieving the data posted to a JSP file from HTML file
------------------------------------------------------------
-Consider an html page that prompts the user to enter his/her name, let's call it getname.htm. 
-The target of form is "showname.jsp", which displays the name entered by the user. To retrieve the value entered by the user we uses the request.getParameter("username"); code.
-
-5.4 Accessing database from JSP
--------------------------------
-we take a example of Books database. This database contains a table named books_details. This table contains three fields- id, book_name& author. we starts from very beginning. First we create how to create tables in MySQl database after that we write a html page for inserting the values in 'books_details' table in database. After submitting values a table will be showed that contains the book name and author name.
-Sample output:
---------------
-![sample output1](http://www.roseindia.net/jsp/Access3.gif)
-Fill the book name and author fields and press Submit button. A page will open and show  a table of book name and authors like.
-On Same JSP Page
-![sample output2](http://www.roseindia.net/jsp/Access4.gif)
-
 5.5 Implement JavaScript with JSP (Complete DB Example)
 -------------------------------------------------------
 Step 1: Create employee form (EmployeeInformation.jsp).
@@ -65,10 +41,5 @@ If  you will select same employee id then massage will display like this.
 If you want to modify record then select employee id and enter new employee name. When you will select modify radio button then click on submit button then massage will display like this.
 
 ![sample output11](http://www.roseindia.net/jsp/empform8.gif)
-
-5.6 Working with sessions
--------------------------
-In any web application user moves from one page to another and it becomes necessary to track the user data and objects throughout the application. JSP provide an implicit object "session", which can be use to save the data specific to the user. 
-In this practical we will create an application that takes the user name from the user and then saves into the user session. We will display the saved data to the user in another page.
 
 
